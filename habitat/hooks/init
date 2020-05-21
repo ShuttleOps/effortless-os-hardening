@@ -1,0 +1,5 @@
+#!/bin/sh
+
+{{#if cfg.automate.enable ~}}
+knife ssl fetch -s {{cfg.automate.server_url}} --config-option trusted_certs_dir={{pkg.svc_config_path}}/trusted_certs
+{{/if ~}}
