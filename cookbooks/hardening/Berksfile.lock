@@ -1,0 +1,9 @@
+DEPENDENCIES
+  hardening
+    path: .
+    metadata: true
+
+GRAPH
+  hardening (0.1.0)
+    os-hardening (= 4.0.0)
+  os-hardening (4.0.0)
