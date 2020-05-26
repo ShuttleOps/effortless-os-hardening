@@ -2,18 +2,20 @@
 
 This repository contains a simple habitat wrapper package for the `chef-os-hardening` cookbook provided by [dev-sec](https://github.com/dev-sec)
 
+This package leverages the `chef/scaffolding-chef-infra` package provided by Chef.
+
 ## Usage
 
 ### Deploying via shuttleops
 
-1. Login to app.shuttleops.io.
+1. Login to [app.shuttleops.io](https://app.shuttleops.io).
 2. In the payload task, select the desired version of the `shuttleops/effortless-os-hardening` package from bldr.
 3. In the destination task, add the `shuttleops/effortless-os-hardening` component to each server destination you'd like to apply the cookbook to.
 4. Launch the pipeline.
 
 ### Configure reporting to automate
 
-1. Login to app.shuttleops.io.
+1. Login to [app.shuttleops.io](https://app.shuttleops.io).
 2. Open the configuration panel from the payload task on the `shuttleops/effortless-os-hardening` component.
 3. Expand the "automate" config section and set enable = true. Also set your data collector URL and token from automate.
 4. Launch the pipeline.
